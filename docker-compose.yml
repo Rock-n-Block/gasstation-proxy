@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  proxy:
+    env_file: .env
+    build:
+      context: .
+    ports:
+      - "${DOCKER_EXPOSE_PORT?8000}:80"
+    restart: unless-stopped
