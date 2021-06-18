@@ -1,7 +1,6 @@
 import os
 import requests
 import json
-import random
 
 from fastapi import FastAPI
 
